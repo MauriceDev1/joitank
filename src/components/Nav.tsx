@@ -10,6 +10,7 @@ const Nav:Component = () => {
                 <div>
                     <Link href="#">
                     <img src={Logo} class="h-10"/>
+                    <p>MIXONI PROJECTS</p>
                     </Link>
                 </div>
                 <div class="hidden md:block">
