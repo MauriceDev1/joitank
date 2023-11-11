@@ -15,7 +15,8 @@ const Hero2:Component = () => {
                     <div class="w-full sm:w-1/3">
                         <img src={VerticalTank} />
                     </div>
-                    <div class="w-full sm:w-2/3 py-4 flex" style={{"background-color":'#4472C4'}}>
+                    <div class="w-full sm:w-2/3 py-4 flex flex-wrap">
+                        <div class="w-full py-4 flex" style={{"background-color":'#4472C4'}}>
                         <div class="w-1/2 text-white">
                             <h2 class="font-semibold text-xl text-center">Size Options</h2>
                             <div class="w-full flex pt-5">
@@ -42,6 +43,8 @@ const Hero2:Component = () => {
                                 </ul>
                             </div>
                         </div>
+                        </div>
+                        <button class="h-10 mt-5 w-full text-white rounded" style={{"background-color":'#02497D'}}>Get a Quote</button>
                     </div>
                 </div>
             </div>
