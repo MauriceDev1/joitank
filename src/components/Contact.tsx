@@ -5,7 +5,11 @@ const Contact:Component = () => {
         <div class="w-full h-screen" style={{"background-color":'#EEDFAF'}}>
             <div class="w-11/12 md:w-10/12 m-auto flex flex-wrap">
                 <div class="w-1/2">
-
+                    <label>Name and Surname</label>
+                    <input 
+                        type="text" 
+                        class="w-full h-10 rounded border border-gray-300"
+                    />
                 </div>
                 <div class="w-1/2">
                     <div class="p-5">
