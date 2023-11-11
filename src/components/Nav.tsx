@@ -11,7 +11,7 @@ const Nav:Component = () => {
                     <img src={Logo} class="h-10"/>
                     </Link>
                 </div>
-                <div>
+                <div class="hidden md:block">
                    <ul class="flex gap-10">
                     <Link href="/">
                         <li>Home</li>
