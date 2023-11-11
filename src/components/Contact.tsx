@@ -31,7 +31,32 @@ const Contact:Component = () => {
                         class="w-full h-10 rounded border border-gray-300"
                     />
                     <label>Which Tank do you need?</label>
-                    <input type="radio" />
+                    <div class="w-full flex flex-wrap">
+                        <div class="w-1/3 flex gap-4">
+                            <input type="radio" value={800}/>
+                            <p>800L</p>
+                        </div>
+                        <div class="w-1/3 flex gap-4">
+                            <input type="radio" value={1000} />
+                            <p>1000L</p>
+                        </div>
+                        <div class="w-1/3 flex gap-4">
+                            <input type="radio" value={2000} />
+                            <p>2000L</p>
+                        </div>
+                        <div class="w-1/3 flex gap-4">
+                            <input type="radio" value={2500} />
+                            <p>2500L</p>
+                        </div>
+                        <div class="w-1/3 flex gap-4">
+                            <input type="radio" value={5000} />
+                            <p>5000L</p>
+                        </div>
+                        <div class="w-1/3 flex gap-4">
+                            <input type="radio" value={10000} />
+                            <p>10000L</p>
+                        </div>
+                    </div>
                     <button class="bg-black text-white h-10 rounded w-full">Submit</button>
                 </div>
                 <div class="w-1/2">
