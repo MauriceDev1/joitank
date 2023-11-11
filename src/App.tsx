@@ -10,9 +10,6 @@ function App() {
   return (
     <Routes>
       <Route path="/" component={Home} />
-      <Route path="/services" component={Services} />
-      <Route path="/products" component={Products} />
-      <Route path="/contact" component={Contact} /> 
     </Routes>
   )
 }
