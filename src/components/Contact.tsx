@@ -10,6 +10,27 @@ const Contact:Component = () => {
                         type="text" 
                         class="w-full h-10 rounded border border-gray-300"
                     />
+                    <label>Address of Installation</label>
+                    <textarea 
+                        name="address" 
+                        id="" 
+                        cols="30" 
+                        rows="4"
+                        placeholder="Enter address here"
+                        class="w-full resize-none rounded border border-gray-300"
+                    >
+                    </textarea>
+                    <label>Email Address</label>
+                    <input 
+                        type="text" 
+                        class="w-full h-10 rounded border border-gray-300"
+                    />
+                    <label>Contact Number</label>
+                    <input 
+                        type="tell" 
+                        class="w-full h-10 rounded border border-gray-300"
+                    />
+                    <label>Which Tank do you need</label>
                 </div>
                 <div class="w-1/2">
                     <div class="p-5">
