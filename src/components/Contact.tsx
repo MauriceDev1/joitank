@@ -2,7 +2,7 @@ import { Component } from "solid-js";
 
 const Contact:Component = () => {
     return (
-        <div class="w-full h-screen" style={{"background-color":'#EEDFAF'}}>
+        <div class="w-full h-screen py-16" style={{"background-color":'#EEDFAF'}}>
             <div class="w-11/12 md:w-10/12 m-auto flex flex-wrap">
                 <div class="w-1/2">
                     <label>Name and Surname</label>
@@ -30,7 +30,9 @@ const Contact:Component = () => {
                         type="tell" 
                         class="w-full h-10 rounded border border-gray-300"
                     />
-                    <label>Which Tank do you need</label>
+                    <label>Which Tank do you need?</label>
+                    <input type="radio" />
+                    <button class="bg-black text-white h-10 rounded w-full">Submit</button>
                 </div>
                 <div class="w-1/2">
                     <div class="p-5">
