@@ -2,9 +2,9 @@ import { Component } from "solid-js";
 
 const Contact:Component = () => {
     return (
-        <div class="w-full h-screen py-16" style={{"background-color":'#EEDFAF'}}>
+        <div class="w-full sm:h-screen py-16" style={{"background-color":'#EEDFAF'}}>
             <div class="w-11/12 md:w-10/12 m-auto flex flex-wrap">
-                <div class="w-1/2 flex flex-col gap-3">
+                <div class="w-full sm:w-1/2 flex flex-col gap-3">
                     <label>Name and Surname</label>
                     <input 
                         type="text" 
@@ -63,7 +63,7 @@ const Contact:Component = () => {
                     </div>
                     <button class="bg-black text-white h-10 rounded w-full mt-4">Submit</button>
                 </div>
-                <div class="w-1/2">
+                <div class="w-full sm:w-1/2">
                     <div class="p-5">
                         <p>Mixoni (PTY) Ltd  is 100% women owned enterprise which seeks to provide back up water solution services to commercial, industrial and domestic clients across Gauteng.</p>
                     </div>

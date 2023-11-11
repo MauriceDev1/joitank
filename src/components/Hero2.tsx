@@ -34,12 +34,13 @@ const Hero2:Component = () => {
                             <h2 class="font-semibold text-xl text-center">Your package includes</h2>
                             <div class="w-full flex pt-5">
                                 <ul class="text-white m-auto">
-                                    <li class="text-lg py-2">800L from R13 500*</li>
-                                    <li class="text-lg py-2">1000L from R14 000*</li>
-                                    <li class="text-lg py-2">2000L from R15 000*</li>
-                                    <li class="text-lg py-2">2500L from R 16 000*</li>
-                                    <li class="text-lg py-2">5000L from R17 000*</li>
-                                    <li class="text-lg py-2">10 000L from R 38 000*</li>
+                                    <li class="text-lg py-2">Installation </li>
+                                    <li class="text-lg py-2">Water connection to main building/house</li>
+                                    <li class="text-lg py-2">0.75 Speed drive water pump </li>
+                                    <li class="text-lg py-2">Pump cover</li>
+                                    <li class="text-lg py-2">25mm suction hop kit</li>
+                                    <li class="text-lg py-2">Municipal water feed connection</li>
+                                    <li class="text-lg py-2">10-year tank warranty</li>
                                 </ul>
                             </div>
                         </div>
