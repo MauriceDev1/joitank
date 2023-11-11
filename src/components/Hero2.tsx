@@ -1,5 +1,5 @@
 import { Component } from "solid-js";
-import VerticalTank from "../assets/images/vertical.png"
+import VerticalTank from "../assets/images/Water.png"
 
 const Hero2:Component = () => {
     return (
