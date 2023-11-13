@@ -7,20 +7,16 @@ const Nav:Component = () => {
     return (
         <nav class="w-full py-2 sticky top-0" style={{"background-color":'#EEDFAF'}}>
             <div class="w-11/12 md:w-10/12 m-auto flex md:gap-96 items-center justify-between md:justify-start">
-                <div>
+                <div class="flex justify-center">
                     <Link href="#">
-                    <img src={Logo} class="h-10"/>
-                    <p>MIXONI PROJECTS</p>
+                        <img src={Logo} class="h-10 m-auto"/>
+                        <p class="text-lg">MIXONI PROJECTS</p>
                     </Link>
                 </div>
                 <div class="hidden md:block">
-                   <ul class="flex gap-10">
+                   <ul class="flex gap-10 text-lg">
                     <Link href="#">
                         <li>Home</li>
-                    </Link>
-                        <li>|</li>
-                    <Link href="#">
-                        <li>Services</li>
                     </Link>
                         <li>|</li>
                     <Link href="#">
