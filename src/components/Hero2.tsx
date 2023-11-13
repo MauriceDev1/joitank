@@ -4,7 +4,7 @@ import { TiTick } from 'solid-icons/ti'
 
 const Hero2:Component = () => {
     return (
-        <div class="w-full py-16" style={{"background-color":'#0540A9'}}>
+        <div class="w-full py-16" style={{"background-color":'#0540A9'}} id="product">
             <div class="w-11/12 md:w-10/12 m-auto">
                 <h1 class="text-white text-4xl text-center">
                     Say goodbye to water shedding and enjoy uninterrupted water supply
