@@ -1,12 +1,13 @@
 import { Component } from "solid-js";
 import VerticalTank from "../assets/images/Water.png"
 import { TiTick } from 'solid-icons/ti'
+import { Link } from "@solidjs/router";
 
 const Hero2:Component = () => {
     return (
         <div class="w-full py-16" style={{"background-color":'#0540A9'}} id="product">
             <div class="w-11/12 md:w-10/12 m-auto">
-                <h1 class="text-white text-4xl text-center">
+                <h1 class="text-white font-semibold text-4xl text-center">
                     Say goodbye to water shedding and enjoy uninterrupted water supply
                 </h1>
                 <h2 class="text-white text-2xl text-center py-10">
@@ -82,7 +83,9 @@ const Hero2:Component = () => {
                             </div>
                         </div>
                         <div class="w-full flex justify-end">
-                            <button class="h-10 mt-5 w-full md:w-11/12 text-white rounded" style={{"background-color":'#0169BE'}}>Get a Quote</button>
+                            <Link href="#contact" class="w-full">
+                                <button class="h-10 mt-5 w-full md:w-11/12 text-white rounded"  style={{"background-color":'#0169BE'}}>Get a Quote</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

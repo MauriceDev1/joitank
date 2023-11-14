@@ -141,13 +141,13 @@ const Contact:Component = () => {
                     </div>
                     <div class="w-full">
                         <div class="w-1/2 m-auto">
-                            <h1 class="text-3xl py-2 text-center font-semibold">We also do</h1>
+                            <h1 class="text-3xl py-4 text-center font-semibold">We also do</h1>
                             <p class="text-center text-xl">
                                 Cleaning Services<br></br>
                                 Construction<br></br>
                                 Training  
                             </p>
-                            <h1 class="text-3xl py-3 text-center mb-5 font-semibold">Get intouch</h1>
+                            <h1 class="text-3xl pt-5 pb-3 text-center mb-5 font-semibold">Get intouch</h1>
                             <div class="flex flex-col gap-6 text-center">
                                 <p class="text-xl flex items-center gap-5 m-auto"><FaSolidPhone />078 129 2862</p>
                                 <p class="text-xl flex items-center gap-5 m-auto"><FaSolidEnvelope />bookings@mixoni.org</p>
