@@ -2,7 +2,7 @@ import { Component } from "solid-js";
 
 const About:Component = () => {
     return (
-        <div class="w-full py-16">
+        <div class="w-full py-16" id="about">
             <div class="w-10/12 m-auto">
                 <div class="bg-red-500 w-full flex justify-center rounded">
                     <h1 class="text-center text-4xl py-2 text-white">

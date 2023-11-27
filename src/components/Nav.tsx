@@ -1,6 +1,6 @@
 import { Link } from "@solidjs/router";
 import { Component, createSignal } from "solid-js";
-import Logo from "../assets/images/logo.png"
+import Logo from "../assets/images/Mixoni Logo (2).png"
 import { IoMenuSharp } from 'solid-icons/io'
 
 const Nav:Component = () => {
@@ -11,8 +11,7 @@ const Nav:Component = () => {
                 <div class="w-11/12 md:w-10/12 m-auto flex justify-between items-center">
                     <div class="flex justify-center">
                         <Link href="#">
-                            <img src={Logo} class="h-10 m-auto"/>
-                            <p class="text-lg">MIXONI PROJECTS</p>
+                            <img src={Logo} class="h-12 m-auto"/>
                         </Link>
                     </div>
                     <div class="hidden md:block mr-10 xl:mr-64">
@@ -21,7 +20,7 @@ const Nav:Component = () => {
                                 <li>Home</li>
                             </Link>
                                 <li>|</li>
-                            <Link href="#product">
+                            <Link href="#about">
                                 <li>About Us</li>
                             </Link>
                                 <li>|</li>

@@ -2,7 +2,7 @@ import { Component } from "solid-js";
 
 const Services:Component = () => {
     return (
-        <div class="w-full py-16">
+        <div class="w-full py-16" id="services">
             <div class="w-10/12 m-auto">
                 <div class="bg-red-500 w-full flex justify-center rounded">
                     <h1 class="text-center text-4xl py-2 text-white">
@@ -41,11 +41,11 @@ const Services:Component = () => {
                                 Construction
                             </h3>
                             <p class="text-center">
-                                General Cleaning (private and
-                                commercial)
-                                Post-construction cleaning
-                                Window cleaning
-                                Pre-occupation office cleaning
+                                Demolition, Building
+                                Plastering, Painting, Plumbing,
+                                Roofing
+                                Pool construction and maintenance,
+                                Waterproofing
                             </p>
                             <div class="w-full pt-5 pb-2 flex justify-center">
                                 <button class="m-auto">
@@ -63,11 +63,9 @@ const Services:Component = () => {
                                 Training
                             </h3>
                             <p class="text-center">
-                                General Cleaning (private and
-                                commercial)
-                                Post-construction cleaning
-                                Window cleaning
-                                Pre-occupation office cleaning
+                                End user computing
+                                Systems Support
+                                System development
                             </p>
                             <div class="w-full pt-5 pb-2 flex justify-center">
                                 <button class="m-auto">

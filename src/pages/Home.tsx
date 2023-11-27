@@ -5,6 +5,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import About from "../components/About";
 import Services from "../components/Services";
+import Clients from "../components/Clients";
 
 const Home:Component = () => {
     return (
@@ -12,7 +13,8 @@ const Home:Component = () => {
             <Hero />
             <About />
             <Services />
-            <Hero2 />
+            {/* <Hero2 /> */}
+            <Clients />
             <Contact />
             <Footer />
         </>
