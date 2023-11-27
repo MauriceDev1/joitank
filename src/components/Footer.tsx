@@ -2,7 +2,7 @@ import { Component } from "solid-js";
 
 const Footer: Component = () => {
     return (
-        <footer class="py-3" style={{"background-color": '#0540A9'}}>
+        <footer class="py-3 bg-red-500">
             Test
         </footer>
     )

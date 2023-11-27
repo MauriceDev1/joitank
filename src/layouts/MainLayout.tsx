@@ -9,7 +9,9 @@ const MainLayout:Component<MainLayoutProps> = ({children}) => {
     return (
         <>
             <Nav />
-            {children}
+            <div class="w-full">
+                {children}
+            </div>
         </>
     )
 }

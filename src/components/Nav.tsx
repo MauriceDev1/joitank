@@ -7,7 +7,7 @@ const Nav:Component = () => {
     const [triggerMenu, setTriggerMenu] = createSignal(false);
     return (
         <>
-            <nav class="w-full py-2 sticky top-0" style={{"background-color":'#EEDFAF'}}>
+            <nav class="w-full py-2 sticky top-0 bg-white">
                 <div class="w-11/12 md:w-10/12 m-auto flex justify-between items-center">
                     <div class="flex justify-center">
                         <Link href="#">
@@ -22,7 +22,11 @@ const Nav:Component = () => {
                             </Link>
                                 <li>|</li>
                             <Link href="#product">
-                                <li>Products</li>
+                                <li>About Us</li>
+                            </Link>
+                                <li>|</li>
+                            <Link href="#services">
+                                <li>Services</li>
                             </Link>
                                 <li>|</li>
                             <Link href="#contact">
