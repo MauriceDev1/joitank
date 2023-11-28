@@ -1,7 +1,6 @@
 import { Component } from "solid-js";
 import VerticalTank from "../assets/images/Water.png"
 import { TiTick } from 'solid-icons/ti'
-import { Link } from "@solidjs/router";
 
 const Hero2:Component = () => {
     return (
