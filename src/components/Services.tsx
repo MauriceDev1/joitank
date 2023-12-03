@@ -1,4 +1,8 @@
 import { Component } from "solid-js";
+import CleaningImg from "../assets/images/7.png";
+import ConstructionImg from "../assets/images/b3.png";
+import InformationImg from "../assets/images/1.png";
+import WaterImg from '../assets/images/Water.png'
 
 const Services:Component = () => {
     return (
@@ -10,8 +14,8 @@ const Services:Component = () => {
                     </h1>
                 </div>
                 <div class="w-full flex flex-wrap sm:flex-nowrap gap-4 pt-10">
-                    <div class="w-1/4 border border-red-500 rounded">
-                        <div class="w-full h-56 bg-gray-100">
+                    <div class="w-full sm:w-1/4 border border-red-500 rounded">
+                        <div class="w-full h-56 bg-gray-100" style={{"background-image":`url(${CleaningImg})`,"background-size":"cover"}}>
 
                         </div>
                         <div class="w-full p-2">
@@ -32,8 +36,8 @@ const Services:Component = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="w-1/4 border border-red-500 rounded">
-                        <div class="w-full h-56 bg-gray-100">
+                    <div class="w-full sm:w-1/4 border border-red-500 rounded">
+                        <div class="w-full h-56 bg-gray-100" style={{"background-image":`url(${ConstructionImg})`,"background-size":"cover"}}>
 
                         </div>
                         <div class="w-full p-2">
@@ -54,18 +58,26 @@ const Services:Component = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="w-1/4 border border-red-500 rounded">
-                        <div class="w-full h-56 bg-gray-100">
+                    <div class="w-full sm:w-1/4 border border-red-500 rounded">
+                        <div class="w-full h-56 bg-gray-100" style={{"background-image":`url(${InformationImg})`,"background-size":"cover"}}>
 
                         </div>
                         <div class="w-full p-2">
                             <h3 class="text-center text-xl font-semibold pb-5">
+                                Information Technology
+                            </h3>
+                            <p class="text-center">
+                                Systems Development, IT Support
+                                Network Support, Fibre installation, IT
+                                maintenance
+                            </p>
+                            <h3 class="text-center text-xl font-semibold py-3">
                                 Training
                             </h3>
                             <p class="text-center">
-                                End user computing
-                                Systems Support
-                                System development
+                                End user computing , Microsoft Office
+                                Training, Media and advertising,
+                                Systems development
                             </p>
                             <div class="w-full pt-5 pb-2 flex justify-center">
                                 <button class="m-auto">
@@ -74,13 +86,13 @@ const Services:Component = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="w-1/4 border border-red-500 rounded">
-                        <div class="w-full h-56 bg-gray-100">
+                    <div class="w-full sm:w-1/4 border border-red-500 rounded">
+                        <div class="w-full h-56 bg-gray-100" style={{"background-image":`url(${WaterImg})`,"background-size":"cover"}}>
 
                         </div>
                         <div class="w-full p-2">
                             <h3 class="text-center text-xl font-semibold pb-5">
-                                Construction
+                                Back-up water systems
                             </h3>
                             <p class="text-center">
                                 General Cleaning (private and

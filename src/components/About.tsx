@@ -14,7 +14,7 @@ const About:Component = () => {
                 </div>
                 <div class="text-center text-lg px-12">
                     We aim to influence the world by being a game-changing women led organization. We will do so by prioritizing the
-                    advancement and empowerment of the youth and underprivileged groups in South African
+                    advancement and empowerment of the youth and underprivileged groups in South Africa
                 </div>
                 <div>
                     <h3 class="text-center text-3xl py-10 font-bold">Mission</h3>
