@@ -43,7 +43,12 @@ const Nav:Component = () => {
             </nav>
             {triggerMenu() && 
                 <div class="w-full h-screen fixed bg-black bg-opacity-50 z-50 top-0">
+                    <div class="w-2/3 max:w-[350px] bg-white h-screen">
 
+                    </div>
+                    <div class="absolute top-4 right-4 text-white">
+                        X
+                    </div>
                 </div>
             }
         </>

@@ -97,7 +97,7 @@ const Contact:Component = () => {
                 <div class="w-full sm:w-1/2">
                     <div class="w-full">
                         <div class="w-1/2 m-auto">
-                            <h1 class="text-4xl pb-10 text-center font-semibold">Get intouch</h1>
+                            <h1 class="text-4xl pt-10 pb-10 sm:pt-0 text-center font-semibold">Get intouch</h1>
                             <div class="flex flex-col gap-10 text-center">
                                 <p class="text-xl flex items-center gap-5 m-auto"><FaSolidPhone />010 634 4027</p>
                                 <p class="text-xl flex items-center gap-5 m-auto"><FaSolidPhone />078 129 2862</p>
