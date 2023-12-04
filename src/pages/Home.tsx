@@ -8,6 +8,7 @@ import Clients from "../components/Clients";
 import Cleaning from "../components/Cleaning";
 import Information from "../components/Information";
 import Construction from "../components/Construction";
+import Hero2 from "../components/Hero2";
 
 const Home:Component = () => {
     return (
@@ -18,6 +19,7 @@ const Home:Component = () => {
             <Cleaning />
             <Information />
             <Construction />
+            <Hero2 />
             <Clients />
             <Contact />
             <Footer />

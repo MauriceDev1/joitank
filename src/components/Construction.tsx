@@ -3,7 +3,7 @@ import ConstructionImg from "../assets/images/b1.png"
 
 const Construction: Component = () => {
     return (
-        <div class="w-full py-16">
+        <div class="w-full py-16" id="construction">
             <div class="w-10/12 m-auto">
                 <div>
                     <h1 class="text-center text-3xl pb-5 font-bold">

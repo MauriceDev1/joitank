@@ -59,6 +59,12 @@ const Contact:Component = () => {
                         class="w-full h-10 rounded border px-2 border-red-500"
                     />
                     <label>Service Query</label>
+                    <select>
+                        <option value="">Select</option>
+                        <option value="">Select</option>
+                        <option value="">Select</option>
+                        <option value="">Select</option>
+                    </select>
                     <input 
                         type="tel"
                         name="contact"
@@ -77,7 +83,7 @@ const Contact:Component = () => {
                         value={formData().address ? formData().address : ''}
                         onChange={(e) => setFormData((prv) => ({...prv,address: e.currentTarget.value}))}
                         onInput={() => setFormDataError((prv) => ({...prv,address:''}))}
-                        placeholder={formDataError().address ? formDataError().address :"Enter Address"}
+                        placeholder={formDataError().address ? formDataError().address :"Enter message"}
                         class="w-full resize-none rounded border border-red-500 p-2"
                     >
                     </textarea>
@@ -91,11 +97,13 @@ const Contact:Component = () => {
                 <div class="w-full sm:w-1/2">
                     <div class="w-full">
                         <div class="w-1/2 m-auto">
-                            <h1 class="text-4xl pt-24 py-10 text-center mb-5 font-semibold">Get intouch</h1>
+                            <h1 class="text-4xl pb-10 text-center font-semibold">Get intouch</h1>
                             <div class="flex flex-col gap-10 text-center">
-                                <p class="text-2xl flex items-center gap-5 m-auto"><FaSolidPhone />078 129 2862</p>
-                                <p class="text-2xl flex items-center gap-5 m-auto"><FaSolidEnvelope />bookings@mixoni.org</p>
-                                <p class="text-2xl flex items-center gap-5 m-auto"><FaSolidLocationDot />68 Monument Drive,<br></br>Monavoni, Centurion</p>
+                                <p class="text-xl flex items-center gap-5 m-auto"><FaSolidPhone />010 634 4027</p>
+                                <p class="text-xl flex items-center gap-5 m-auto"><FaSolidPhone />078 129 2862</p>
+                                <p class="text-xl flex items-center gap-5 m-auto"><FaSolidEnvelope />bookings@mixoni.org</p>
+                                <p class="text-xl flex items-center gap-5 m-auto"><FaSolidLocationDot />68 Monument Drive,<br></br>Monavoni, Centurion</p>
+                                <p class="text-xl flex items-center gap-5 m-auto"><FaSolidLocationDot />112 Krombek Street,<br></br>Birch Acres,<br></br>Kempton Park</p>
                             </div>
                         </div>
                     </div>

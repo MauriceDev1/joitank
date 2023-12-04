@@ -2,7 +2,8 @@ import { Component } from "solid-js";
 import CleaningImg from "../assets/images/7.png";
 import ConstructionImg from "../assets/images/b3.png";
 import InformationImg from "../assets/images/1.png";
-import WaterImg from '../assets/images/Water.png'
+import WaterImg from '../assets/images/Watertank.png'
+import { Link } from "@solidjs/router";
 
 const Services:Component = () => {
     return (
@@ -30,9 +31,11 @@ const Services:Component = () => {
                                 Pre-occupation office cleaning
                             </p>
                             <div class="w-full pt-5 pb-2 flex justify-center">
-                                <button class="m-auto">
-                                    Read more
-                                </button>
+                                <Link href="#cleaning">
+                                    <button class="m-auto">
+                                        Read more
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -52,9 +55,11 @@ const Services:Component = () => {
                                 Waterproofing
                             </p>
                             <div class="w-full pt-5 pb-2 flex justify-center">
-                                <button class="m-auto">
-                                    Read more
-                                </button>
+                                <Link href="#construction">
+                                    <button class="m-auto">
+                                        Read more
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -80,9 +85,11 @@ const Services:Component = () => {
                                 Systems development
                             </p>
                             <div class="w-full pt-5 pb-2 flex justify-center">
-                                <button class="m-auto">
-                                    Read more
-                                </button>
+                                <Link href="#information">
+                                    <button class="m-auto">
+                                        Read more
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
