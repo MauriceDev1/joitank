@@ -7,14 +7,16 @@ const Contact:Component = () => {
         address: '',
         email: '',
         contact: '',
-        size: ''
+        options: 'Select',
+        message: ''
     });
     const [formDataError, setFormDataError] = createSignal({
         names: '',
         address: '',
         email: '',
         contact: '',
-        size: ''
+        options: 'Select',
+        message: ''
     });
 
     const submitData = () => {
@@ -59,31 +61,29 @@ const Contact:Component = () => {
                         class="w-full h-10 rounded border px-2 border-red-500"
                     />
                     <label>Service Query</label>
-                    <select>
-                        <option value="">Select</option>
-                        <option value="">Select</option>
-                        <option value="">Select</option>
-                        <option value="">Select</option>
-                    </select>
-                    <input 
-                        type="tel"
-                        name="contact"
-                        value={formData().contact ? formData().contact : ''}
-                        onChange={(e) => setFormData((prv) => ({...prv,contact: e.currentTarget.value}))}
-                        onInput={() => setFormDataError((prv) => ({...prv,contact:''}))}
-                        placeholder={formDataError().contact ? formDataError().contact :"Enter contact number"}
+                    <select
+                        name="options"
+                        value={formData().options ? formData().options : ''}
+                        onChange={(e) => setFormData((prv) => ({...prv,options: e.currentTarget.value}))}
+                        onInput={() => setFormDataError((prv) => ({...prv,options:''}))}
                         class="w-full h-10 rounded border px-2 border-red-500"
-                    />
+                    >
+                        <option value="Select">Select</option>
+                        <option value="Cleaning Services">Cleaning Services</option>
+                        <option value="Construction">Construction</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Back-up Water Systems">Back-up Water Systems</option>
+                    </select>
                     <label>Tell us what you need</label>
                     <textarea 
-                        name="address"
+                        name="message"
                         id="" 
                         cols="30" 
                         rows="4"
-                        value={formData().address ? formData().address : ''}
-                        onChange={(e) => setFormData((prv) => ({...prv,address: e.currentTarget.value}))}
-                        onInput={() => setFormDataError((prv) => ({...prv,address:''}))}
-                        placeholder={formDataError().address ? formDataError().address :"Enter message"}
+                        value={formData().message ? formData().message : ''}
+                        onChange={(e) => setFormData((prv) => ({...prv,message: e.currentTarget.value}))}
+                        onInput={() => setFormDataError((prv) => ({...prv,message:''}))}
+                        placeholder={formDataError().message ? formDataError().message :"Enter message"}
                         class="w-full resize-none rounded border border-red-500 p-2"
                     >
                     </textarea>

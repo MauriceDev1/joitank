@@ -109,9 +109,11 @@ const Services:Component = () => {
                                 Pre-occupation office cleaning
                             </p>
                             <div class="w-full pt-5 pb-2 flex justify-center">
-                                <button class="m-auto">
-                                    Read more
-                                </button>
+                                <Link href="#product">
+                                    <button class="m-auto">
+                                        Read more
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

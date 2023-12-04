@@ -13,9 +13,6 @@ const Hero2:Component = () => {
                     We offer effective back up water systems that you can rely on during water shedding. 
                 </h2>
                 <div class="w-full flex flex-wrap">
-                    <div class="w-full sm:w-1/3">
-                        <img src={VerticalTank} />
-                    </div>
                     <div class="w-full sm:w-2/3 py-4 flex flex-wrap">
                         <div class="w-full py-4 flex flex-wrap">
                             <div class="w-full md:w-1/2">
@@ -81,6 +78,9 @@ const Hero2:Component = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="w-full sm:w-1/3">
+                        <img src={VerticalTank} />
                     </div>
                 </div>
             </div>
