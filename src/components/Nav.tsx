@@ -1,10 +1,17 @@
-import { Link } from "@solidjs/router";
+import { Link, useNavigate } from "@solidjs/router";
 import { Component, createSignal } from "solid-js";
 import Logo from "../assets/images/Mixoni Logo (2).png"
-import { IoMenuSharp } from 'solid-icons/io'
+import { IoCloseOutline, IoMenuSharp } from 'solid-icons/io'
 
 const Nav:Component = () => {
-    const [triggerMenu, setTriggerMenu] = createSignal(false);
+    const [toggleMobileMenu,setToggleMobileMenu] = createSignal(false);
+    const navigate = useNavigate();
+
+    const handleMobileLink = (e:any) => {
+        navigate(`#${e}`)
+        setToggleMobileMenu(false);
+    }
+
     return (
         <>
             <nav class="w-full py-2 sticky top-0 bg-white">
@@ -35,22 +42,65 @@ const Nav:Component = () => {
                     </div>
                     <div 
                         class="block md:hidden"
-                        onClick={() => setTriggerMenu(!triggerMenu())}
+                        onClick={() => setToggleMobileMenu(!toggleMobileMenu())}
                     >
                         <IoMenuSharp class="text-2xl"/>
                     </div>
                 </div>
             </nav>
-            {triggerMenu() && 
-                <div class="w-full h-screen fixed bg-black bg-opacity-50 z-50 top-0">
-                    <div class="w-2/3 max:w-[350px] bg-white h-screen">
-
-                    </div>
-                    <div class="absolute top-4 right-4 text-white">
-                        X
+            <div class={`${toggleMobileMenu() ? 'w-full' : 'w-0'} fixed top-0 left-0 h-screen overflow-hidden bg-opacity-70 bg-black z-50`}>
+                <button
+                    onClick={() => setToggleMobileMenu(false)} 
+                    class="z-50 text-white mt-5 ml-5">
+                    <IoCloseOutline class="text-3xl menuClose" 
+                    />
+                </button>
+                <div class={`fixed ${toggleMobileMenu() ? 'w-[300px]' : 'w-0'} h-screen flex overflow-hidden duration-300 ease-in-out z-30 top-0 right-0 2xl:hidden`} style={{"background-color":"#E63435"}}>
+                    <div class="w-10/12 relative mx-auto text-white">
+                        <ul class="">
+                            <button
+                                onClick={() => handleMobileLink('home')}
+                                class="w-full"
+                            >
+                                <li class="w-full py-4 border-b">Home</li>
+                            </button>
+                            <button
+                                onClick={() => handleMobileLink('about')}
+                                class="w-full"
+                            >
+                                <li class="w-full py-4 border-b">About us</li>
+                            </button>
+                            <button
+                                onClick={() => handleMobileLink('services')}
+                                class="w-full"
+                            >
+                                <li class="w-full py-4 border-b">Services</li>
+                            </button>
+                            <button
+                                onClick={() => handleMobileLink('contact')}
+                                class="w-full"
+                            >
+                                <li class="w-full py-4">Contact us</li>
+                            </button>
+                        </ul>
+                        {/* <div class="w-full absolute flex flex-wrap bottom-5 gap-y-4">
+                            <button 
+                                onclick={() => handleMobileLink('/register')}
+                                class="text-white h-10 rounded-sm border w-full bg-lue-400"
+                                style={{"background-color":"#E63435","border-color":"#E63435"}}
+                            >
+                                Login
+                            </button>
+                            <button 
+                                onclick={() => handleMobileLink('/register')}
+                                class="text-white h-10 rounded-sm bg-black border border-black hover:bg-gray-900 w-full bg-lue-400"
+                            >
+                                Register
+                            </button>
+                        </div> */}
                     </div>
                 </div>
-            }
+            </div>
         </>
     )
 }

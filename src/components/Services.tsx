@@ -102,11 +102,10 @@ const Services:Component = () => {
                                 Back-up water systems
                             </h3>
                             <p class="text-center">
-                                General Cleaning (private and
-                                commercial)
-                                Post-construction cleaning
-                                Window cleaning
-                                Pre-occupation office cleaning
+                                We provide efficient back up water system
+                                solution connected to your main
+                                house/building. All our installations are
+                                done PIRB certified by plumbers
                             </p>
                             <div class="w-full pt-5 pb-2 flex justify-center">
                                 <Link href="#product">
